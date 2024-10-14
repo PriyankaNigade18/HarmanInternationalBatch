@@ -1,0 +1,28 @@
+
+
+Type Casting
+==================
+conversion of one data type into another data type is called
+
+1.primitive to primitive
+=============================
+	1.Implicit (default/Automation--->JVM)
+	2.Explicit (manual conversion -->Casting operator)
+	
+	Wrapper class 
+	================
+	for every primitive data we have class available in java
+	we can use to store data in the form of object
+	
+	int ----->Integer
+	byte---->Byte
+	long---->Long
+	char---->Character
+	boolean--->Boolean
+	
+	
+2.Object to Primitive
+==========================
+
+3.Primitive to Object
+=========================
