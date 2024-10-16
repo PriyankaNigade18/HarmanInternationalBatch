@@ -1,0 +1,402 @@
+
+
+Selenium WebDriver 
+========================
+Selenium WebDriver it is an API for webui automation test
+================================
+Setup
+=============
+1.Using java project
+========================
+1.create java project
+2.download jar file from selenium.dev site
+3.add it to project
+	right click on project-->build path--->configure build path
+	-->libraries-->class path-->add external jar.
+
+2.Using Maven
+==================================
+Maven is build/project management tool
+
+1.POM.xml file
+======================
+Project object model 
+this is configuration file for project
+	1.dependency
+	================
+	library /executable file
+	
+	2.plugin
+	============
+	Maven project execution
+	
+Project structure
+========================
+<project>
+
+<depedencies>
+
+<dependency>
+</dependency>
+
+</depedencies>
+
+
+
+</project>	
+================================
+Repository
+================
+1.Local Repository
+=====================
+/user/.m2 folder
+
+2.Remote/Central repository
+============================
+mvnrepository.com
+
+=====================================
+TestCase1:Validation of google title- Google
+-------------------------------------------
+step1: launch application
+step2: get the actual title
+Step3: validate with expected title
+step4: display the result as per validation
+step5: close the browser
+
+=====================================
+Selenium Browser Commands
+=================================
+1.get()
+2.getTitle()
+3.getCurrentUrl()
+4.getPageSource()
+5.getWindowHandle()
+6.getWindowHandles()
+7.close(): close current open window
+8.quit(): close all open windows by selenium
+
+Selenium Navigation commands
+==================================
+Selenium supports Navigation interface
+
+1.to(url)
+==============
+driver.navigate().to(url)
+
+2.back()
+=============
+driver.navigate().back()
+
+3.forward()
+==============
+driver.navigate().forward()
+
+4.refresh()
+===============
+driver.navigate().refresh()
+
+=====================================================
+What is Webelement
+=======================
+In general Any ui element is Webelement
+In selenium WebElement is an interface
+
+1.Identify Webelement
+2.Perform action 
+
+How selenium identify any webelement?
+=======================================
+Selenium use locator to identify webelement
+
+Locator is address of webelement
+=================================
+Selenium support 8 locators
+=============
+1.By id---Primary locator
+2.By name
+3.By className
+4.By linkText
+5.By partialLinkText
+6.By tagName
+
+Dynamic locators
+=================
+7.By cssSelector
+8.By xpath
+
+
+By is class in selenium
+
+1.Identification
+=====================
+1.findElement()
+==================
+- findElement() identify only single webelement
+- return type is WebElement object
+- if element not found this method return NoSuchElementException
+
+
+
+2.findElements()
+==================
+
+
+=====================================
+WebElement validation
+=======================
+1.isDisplayed()
+2.isEnabled()
+3.isSelected()
+
+
+Action on WebElement
+=====================
+1.textbox,searchbox---->type---->sendKeys(data,Keys.ENTER)
+2.button,link,checkbox,radiobutton---->click----->click()
+to clear the text----->clear()
+
+=========================================
+By className
+===============
+class="btn btn-default btn-primary"
+		c1       c2       c3
+		
+		InvalidSelectorException: Compound class names not permitted
+
+
+=================================
+Hyper link automation
+======================
+<a id="SignIn" href="login.html">Sign In</a>
+<a> Link Text   </a>
+
+1.By linkText()-full text
+====================
+driver.findElement(By.linkText("Sign In")).click();
+
+2.By partialLinkText()- partial text
+============================
+
+driver.findElement(By.partialLinkText("In")).click();
+=========================================
+By tagName
+===============
+1.Number of input boxes
+2.Number of images
+3.Number of links
+
+=================================================
+Synchronization in Selenium
+===============================
+Time mapping between application and tool is synchronization
+
+Selenium support two dynamic wait
+===================================
+1.Implicit 
+================
+- global wait 
+- applicable to each element
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+2.Explicit
+=================
+- It is applicable to single element as per there condition
+
+	1.WebDriverWait class
+	2.FluentWait class
+=================================================
+WebElement methods
+======================
+1.getText()
+=================
+- get the visible text of element
+- getText() will help you to get inner html text also
+
+2.getAttribute(attrubute name)
+====================================
+- returns value associate with that attribute
+
+===============================================
+Dynamic Locators
+========================
+1.By cssSelector
+2.By xpath
+
+
+cssSelector is locator
+============================
+using element attributes we can interact with those elements
+- cssSelector is faster than xpath as it travel in only one direction
+	parent--->child
+- cssSelector directly interact with element by there attribute classname,id,attribute
+- cssSelector doe not support any method
+- cssSelector not support any axies 
+
+1.tagname with id
+=======================
+Syntax:
+============
+tagname#id
+
+<input id="input-email">
+
+input#input-email
+--------------------------------------------
+2.tagname with attribute
+========================
+Syntax:
+===============
+tagname[attribute='value']
+
+placeholder="E-Mail Address"
+
+input[placeholder='E-Mail Address']
+
+-----------------------------------------------------
+3.tagname with classname
+===========================
+Syntax:
+=============
+tagname.classname
+
+class="btn btn-primary"
+
+input.btn.btn-primary
+
+--------------------------------------------
+4.tagname with id,classname,attribute
+=====================================================
+Syntax
+===========
+tagname#id.classname[attribute='value']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
