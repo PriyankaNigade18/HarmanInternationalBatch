@@ -10,6 +10,7 @@ public class CarTest {
 		b1.refule();//inherited
 		b1.stop();//inherited
 		b1.breakFeature();
+		b1.price();
 		
 		System.out.println("**************************");
 		
@@ -18,6 +19,7 @@ public class CarTest {
 		c1.refule();
 		c1.stop();
 		c1.breakFeature();
+		c1.price();
 		
 		System.out.println("**************************");
 
@@ -26,6 +28,7 @@ public class CarTest {
 		c2.refule();
 		c2.stop();
 		c2.breakFeature();
+		c2.price();
 		
 		
 		System.out.println("**************************");
@@ -36,6 +39,7 @@ public class CarTest {
 		a1.refule();
 		a1.stop();
 		a1.breakFeature();
+		a1.price();
 		
 		
 		
