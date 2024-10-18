@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebElementScenariosUsingTestNG.FrameHandling">
+      <class name="com.DataDrivenTest.HrmDataDriven">
         <methods>
-          <include name="testFrame"/>
+          <include name="testLogin" invocation-numbers="1 3"/>
         </methods>
-      </class> <!-- com.WebElementScenariosUsingTestNG.FrameHandling -->
+      </class> <!-- com.DataDrivenTest.HrmDataDriven -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

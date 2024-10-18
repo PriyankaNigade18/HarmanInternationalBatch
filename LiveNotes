@@ -557,25 +557,98 @@ Mouse operation
 Selenium support Actions class
 
 ===============================================================
+Explicit Wait
+======================
+1.WebDriverWait (c)
+2.FluentWait (c)
+
+WebDriverWait(c) extends FluentWait(c)implements Wait(I)
+=================================================
+JavaSriptExecutor
+========================
+1.scroll
+2.get the title
+3.click on element
+4.refresh
+
 TestNG Framework
 ====================
-1.prioity for sequencing
-How to disable any test case from execution
+1.priority for sequencing
+
+2.How to disable any test case from execution
 --------------------------------------
 1.using enabled argument -->enabled=false
 2.using xml file 
 	you can exclude test case/method
+--------------------------------------------	
+Assertion
+===============
+Assertion will help you to test current status of application
+
+Assert class
+==============
+1.assertEquals(true,true)
+2.assertTrue(true)
+3.assertFalse(false)--pass
+
+3.dependsOnMethod
+=================
 
 Annotations
 ===================
+done
 
 
 PageObjectModel
 ====================
+Page Object model is design pattern which helps to maintain test
+and avoid code duplication
 
+1.Using By locator
+2.Using PageFactory
+====================
+PageFactory is a class in selenium
 
+@FindBy(locator="value")WebElement ele;
+
+PageFactory.initElements(driver,current class object)
+
+===============================================================
+How to read data from file
+=============================
+1.using XMl file- @Parameters
+2.using PropertiesFile
+
+Data driven Framework
+==============================
+1.Using Array 
+2.Using Excel File
+
+====================================================
 FrameworkDesign
 =====================
+Design phase
+================
+1.Page Object Model
+2.Test Cases
+3.BaseClass
+4.Configuration file-Properties file
+5.TestData---Excel file
+
+Execution
+-----------
+1.Using xml file
+2.Using Maven Project
+3.Using jenkins
+4.Using GitHub--->Jenkins
+
+Reports
+============
+1.TestNG Reports
+2.ExtentReport+Listener
+3.Allure Report
+
+Screenshots
 
 
 
@@ -616,7 +689,8 @@ FrameworkDesign
 
 
 
-</html>
+
+
 
 
 
