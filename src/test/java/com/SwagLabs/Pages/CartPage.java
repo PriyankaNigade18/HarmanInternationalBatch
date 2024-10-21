@@ -51,7 +51,7 @@ private WebDriver driver;
 	public CheckoutPage doCheckOut()
 	{
 		checkBtn.click();
-		return new CheckoutPage();
+		return new CheckoutPage(driver);
 	}
 	
 	

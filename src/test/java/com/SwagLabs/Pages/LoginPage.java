@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.SwagLabs.Utility.Utility;
+
 public class LoginPage 
 {
 	private WebDriver driver;
@@ -44,7 +46,10 @@ public class LoginPage
 	{
 		username.sendKeys(un);
 		password.sendKeys(psw);
+		Utility.getScreenshot(driver,"LoginData");
 		loginBtn.click();
+		Utility.getScreenshot(driver,"Login");
+
 		//we are navigating to inventory page
 		return new InventoryPage(driver);
 	}

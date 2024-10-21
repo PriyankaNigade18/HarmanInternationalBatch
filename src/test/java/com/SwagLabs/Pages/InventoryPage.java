@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.SwagLabs.Utility.Utility;
+
 public class InventoryPage
 {
 	private WebDriver driver;
@@ -54,6 +56,7 @@ public class InventoryPage
 			if(i.getText().contains(pname))
 			{
 				i.click();//selecting product
+				Utility.getScreenshot(driver,"ProductClicked");
 				break;
 			}
 		}
@@ -67,6 +70,7 @@ public class InventoryPage
 	public CartPage getCartPage()
 	{
 		cartBtn.click();
+		Utility.getScreenshot(driver,"CartPage");
 		return new CartPage(driver);
 	}
 	
