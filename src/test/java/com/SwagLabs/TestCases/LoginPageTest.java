@@ -1,11 +1,14 @@
 package com.SwagLabs.TestCases;
 
 import org.testng.annotations.Test;
+
+import com.SwagLabs.Base.BaseTest;
+
 import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.SwagLabs.Base.BaseTest;
+
 
 public class LoginPageTest extends BaseTest 
 {

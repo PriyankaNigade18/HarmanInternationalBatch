@@ -53,7 +53,7 @@ public class BaseTest
 		}
 	}
 	
-	public String captureScreen(String tname)
+	public  String captureScreen(String tname)
 	{
 	String timestamp=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 	 TakesScreenshot ts=(TakesScreenshot)driver;
