@@ -1,23 +1,26 @@
 package com.TestNGFrameworkAnnotations;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
 public class AnnotationTest1
 {
-	@Test(priority=1)
+	@Test(priority=1,groups="Functional")
 	  public void registerTest()
 	  {
 		  System.out.println("This is register test");
 	  }
 	  
-	  @Test(priority=2)
+	  @Test(priority=2,groups="Regression")
 	  public void loginTest()
 	  {
 		  System.out.println("This is login test");
 	  }
 	  
-	  @Test(priority=3)
+	  @Test(priority=3,groups="Functional")
 	  public void searchProductTest()
 	  {
 		  System.out.println("This is search test");

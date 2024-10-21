@@ -650,7 +650,42 @@ Reports
 
 Screenshots
 
+==============================
+21-10-2024
+===================
+1.Framework Design
+2.Reports
+3.Execution ways
+Distributed version control system + Jenkins
+4.cucumber framework
 
+
+1.Using pom.xml
+=====================
+
+Maven Goals
+=================
+1.clean: delete all files from target folder of maven
+2.test: test the project
+3.install: install package + test
+
+Plugins
+=========
+1.compiler plugins
+=======================
+https://maven.apache.org/plugins/maven-compiler-plugin/examples/compile-using-different-jdk.html
+2.surefire plugins
+=====================
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+
+
+2.Using CLI
+==================
+1.download maven
+2.set path into environment
+
+
+3.Jenkins
 
 
 
